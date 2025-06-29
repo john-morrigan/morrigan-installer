@@ -1,0 +1,15 @@
+{
+    "certificate": {
+        "subject": "CN=Your Company Name, O=Your Organization, C=Your Country",
+        "thumbprint": "YOUR_CERTIFICATE_THUMBPRINT",
+        "password": "YOUR_CERTIFICATE_PASSWORD"
+    },
+    "signing": {
+        "timestamp_url": "http://timestamp.digicert.com",
+        "signing_algorithm": "SHA256"
+    },
+    "output": {
+        "directory": "output/msi",
+        "filename": "morrigan_installer.msi"
+    }
+}

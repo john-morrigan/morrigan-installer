@@ -1,0 +1,24 @@
+{
+    "product_name": "Morrigan Client",
+    "version": "0.1.0",
+    "manufacturer": "Morrigan AI",
+    "upgrade_code": "YOUR-UPGRADE-CODE-HERE",
+    "output_directory": "dist",
+    "icon_path": "resources/icons/morrigan.ico",
+    "license_path": "resources/license/LICENSE.rtf",
+    "banner_image": "resources/images/banner.bmp",
+    "dialog_image": "resources/images/dialog.bmp",
+    "install_directory": "C:\\Program Files\\Morrigan Client",
+    "uninstall_string": "Morrigan Client Uninstaller",
+    "msi_options": {
+        "compress": true,
+        "install_scope": "perMachine",
+        "allow_user_to_change_install_directory": false
+    },
+    "files": [
+        {
+            "source": "path/to/your/application/files/*",
+            "destination": "Morrigan Client"
+        }
+    ]
+}
