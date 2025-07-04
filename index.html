@@ -4,16 +4,29 @@
     <title>Morrigan Installer</title>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const isWindows = navigator.userAgent.includes("Windows");
-            const redirectUrl = isWindows ? "web-install.bat" : "web-install.sh";
+            const userAgent = navigator.userAgent.toLowerCase();
+            let redirectUrl;
+
+            if (userAgent.includes("windows")) {
+                redirectUrl = "releases/latest/morrigan-installer-windows-x64.zip";
+            } else if (userAgent.includes("mac os") || userAgent.includes("darwin")) {
+                redirectUrl = "releases/latest/morrigan-installer-darwin-arm64.zip";
+            } else if (userAgent.includes("linux")) {
+                redirectUrl = "releases/latest/morrigan-installer-linux-x64.zip";
+            } else {
+                redirectUrl = "releases/latest/morrigan-installer.zip"; // Fallback
+            }
+
+            console.log("Redirecting to:", redirectUrl);
             window.location.href = redirectUrl;
         });
     </script>
 </head>
 <body>
-    <p>Redirecting to installer script...</p>
+    <p>Redirecting to the appropriate installer...</p>
     <p>If you're not redirected,
-        <a id="redirect-link" href="web-install.sh">click here</a>.
+        <a id="redirect-link" href="releases/latest/morrigan-installer.zip">click here</a>.
     </p>
 </body>
 </html>
+
