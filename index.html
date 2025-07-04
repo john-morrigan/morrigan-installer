@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="0; url=web-install.sh">
     <title>Morrigan Installer</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const isWindows = navigator.userAgent.includes("Windows");
+            const redirectUrl = isWindows ? "web-install.bat" : "web-install.sh";
+            window.location.href = redirectUrl;
+        });
+    </script>
 </head>
 <body>
     <p>Redirecting to installer script...</p>
-    <p>If you're not redirected, <a href="web-install.sh">click here</a>.</p>
+    <p>If you're not redirected,
+        <a id="redirect-link" href="web-install.sh">click here</a>.
+    </p>
 </body>
 </html>
