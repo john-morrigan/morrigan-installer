@@ -1,0 +1,3 @@
+a2d90b19d8c700bc53fc778489c37fd99dc36ecc66d3d547492505168621df20  morrigan-installer-darwin-arm64.zip
+414941250a6457fdc89f020b9c8c946f65f9c36d333ee19e98d4e13c5f6991a8  morrigan-installer-linux-x86_64.zip
+c214c0b6eeacd0fb26c084768010408bb1f956dc01a0808fd4ec15e19eb00207  morrigan-installer-windows-amd64.zip
