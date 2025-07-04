@@ -6,7 +6,7 @@ echo Morrigan LLM Monitor - Auto Installer
 echo ====================================
 
 set FILENAME=morrigan-installer-windows-amd64.zip
-set URL=https://github.com/yourusername/morrigan-releases/releases/latest/download/%FILENAME%
+set URL=https://github.com/john-morrigan/morrigan-releases/releases/latest/download/%FILENAME%
 
 echo Downloading %FILENAME%...
 curl -L -o "%FILENAME%" "%URL%"
